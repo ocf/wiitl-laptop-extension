@@ -14,4 +14,4 @@ Userspace crontab should look something like this:
 * * * * * cd /path/to/pestilence-push && bash pestilence-push.sh
 ```
 
-The `cd` is advisable because secrets must be loaded from `/path/to/pestilence-push`.
+The `cd` is advisable because secrets must be loaded from `/path/to/pestilence-push/.env`.
