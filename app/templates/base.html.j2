@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="flex flex-row h-10 items-center px-2">
+            <div class="flex text-2xl font-bold">mac-wiitl</div>
+            {% if username %}
+            <div class="flex ml-auto mr-2">{{ username }}</div>
+            <div class="flex underline text-blue-600">Log Out</div>
+            {% endif %}
+        </div>
+        <hr>
+        <div class="p-2">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Log In{% endblock %}
+
+{% block content %}
+<div class="flex w-ful mt-8">
+    <a class="flex mx-auto text-white bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md" 
+        href="https://idm.ocf.berkeley.edu/realms/ocf/login-actions/authenticate?client_id={{ oauth_client_id }}&tab_id={{ oauth_tab_id }}">
+        Log in with Keycloak
+    </a>
+</div>
+{% endblock %}
